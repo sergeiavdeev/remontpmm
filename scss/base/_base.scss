@@ -1,0 +1,31 @@
+$background: #f4f2f5;
+$blue: #1f5bff;
+$black: #000;
+$white: #ffffff;
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: $background;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;    
+}
