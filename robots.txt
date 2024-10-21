@@ -1,0 +1,5 @@
+Sitemap: https://remontpmm.ru/sitemap.xml
+
+User-agent: *
+Allow: https://remontpmm.ru
+Allow: 
