@@ -121,6 +121,7 @@ h3 {
   left: 0;
   right: 0;
   background-color: #f4f2f5;
+  z-index: 50;
 }
 .header__logo {
   color: #1f5bff;
@@ -326,12 +327,12 @@ h3 {
   text-align: center;
 }
 
-swiper-container {
+.swiper {
   width: 100%;
   height: 100%;
 }
 
-swiper-slide {
+.swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -340,7 +341,7 @@ swiper-slide {
   align-items: center;
 }
 
-swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;

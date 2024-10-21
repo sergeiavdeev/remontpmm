@@ -12,6 +12,7 @@
     left: 0;
     right: 0;
     background-color: $background;
+    z-index: 50;
 
     &__logo {
         color: $blue; 
