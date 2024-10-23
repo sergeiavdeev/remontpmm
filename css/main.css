@@ -347,6 +347,11 @@ h3 {
 .contacts__content li {
   font-size: 1.5em;
 }
+@media (max-width: 720px) {
+  .contacts__content li {
+    font-size: 1.2em;
+  }
+}
 
 .link__mail {
   color: #1f5bff;
