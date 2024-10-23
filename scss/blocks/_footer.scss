@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: $blue;
+    height: 70px;
+    color: $background;
+    margin-top: 70px;
+
+    &__link_mail {
+        color: $background;   
+    }
+}
