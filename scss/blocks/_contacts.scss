@@ -1,5 +1,4 @@
 .contacts {
-    //background-color: $blue;
     margin-top: 80px;
 
     &__content {
@@ -12,50 +11,41 @@
             flex-direction: column;
             gap: 30px;
             list-style: none;
-            //line-height: 30px;
             margin-top: 40px;
         }
 
         & li {
-            font-size: 1.5em;
-            @media (max-width: 720px) {
-                font-size: 1.2em;
-            }
+            font-size: 2rem;
         }
 
     }
 }
 
-.link__mail {
-    color: $blue;
-    font-size: 30px;
+.link__mail, .link__phone {
+    color: $blue;    
     display: flex;
     align-items: center;
     &::before {
         content: '';
-        background-image: url("../img/mail.svg");
         background-repeat: no-repeat;
         background-size: cover;
         width: 32px;
         height: 32px;
         display: block;   
-        margin-right: 20px;
+        margin-right: 10px;
     }
 }
 
 .link__phone {
-    color: $blue;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    &::before {
-        content: '';
-        background-image: url("../img/phone.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 32px;
-        height: 32px;
-        display: block;   
-        margin-right: 20px;
+    
+    &::before {        
+        background-image: url("../img/phone.svg");        
+    }
+}
+
+.link__mail {
+    
+    &::before {        
+        background-image: url("../img/mail.svg");        
     }
 }

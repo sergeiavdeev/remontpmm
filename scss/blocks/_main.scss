@@ -2,11 +2,6 @@
 
     margin-top: 140px;
 
-    &__title {
-        font-size: 40px;
-        font-weight: 700;
-    }
-
     &__content {
         display: flex;
         justify-content: space-between;
@@ -19,15 +14,19 @@
 
     &__content_list {
         list-style: circle;
-        list-style-position: inside;
+        list-style-position: outside;
+        padding-left: 25px;
         list-style-image: url('../img/check.svg');
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
         
         &_item {
 
-            font-size: 1.5em;
+            font-size: 1.6rem;
             
             &::marker {
-                font-size: 1.7em;
+                font-size: 1.7rem;
             }
         }
     }
@@ -60,11 +59,12 @@
     &__grid_list {
 
         list-style: circle;
-        list-style-position: inside;
+        list-style-position: outside;
+        padding-left: 20px;
         line-height: 30px;
 
         &_item {
-            font-size: 1.2em;
+            font-size: 1.2rem;
             &::marker {
                 color: $blue;
             }
@@ -73,7 +73,7 @@
 
     &__grid_item_footer {
         color: $red;
-        font-size: 1.7em;
+        font-size: 1.8rem;
         text-align: center;        
     }
 }

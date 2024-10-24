@@ -19,7 +19,7 @@
         color: $blue; 
         display: flex;  
         align-items: center;   
-        font-size: 30px; 
+        font-size: 2rem; 
         font-weight: 700;
         &::before {
             content: '';
@@ -72,8 +72,8 @@
     }
 
     &__link {
-        font-size: 25px;
-        font-weight: 700;
+        font-size: 1.6rem;
+        font-weight: 400;
         color: $black;
         transition: 0.4s;
         &:hover {
@@ -83,7 +83,8 @@
 
     &__phone {
         color: $blue;
-        font-size: 30px;
+        font-size: 2rem;
+        font-weight: 700;
         display: flex;
         align-items: center;
         &::before {
