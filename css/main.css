@@ -96,7 +96,7 @@ html {
 }
 @media (max-width: 720px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -292,7 +292,12 @@ h3 {
 @media (max-width: 720px) {
   .main__content {
     flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
+}
+.main img {
+  border-radius: 5px;
 }
 .main__content_list {
   list-style: circle;
