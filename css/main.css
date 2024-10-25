@@ -88,6 +88,9 @@ html {
   font-style: normal;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.75);
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: none;
 }
 @media (max-width: 1024px) {
   html {
