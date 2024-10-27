@@ -2,13 +2,20 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
-  autoplay: {
+  /*autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },
-  pagination: {
+  },*/
+  /*pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },*/
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     640: {

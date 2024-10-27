@@ -25,16 +25,8 @@ html {
     text-size-adjust: none;
 }
 
-
 body {
     background-color: $background;
-}
-
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 h1 {
@@ -45,11 +37,43 @@ h1 {
 h2 {
     font-size: 2.3rem;
     font-weight: 700;
-    padding-top: 140px;
 }
 
 h3 {
     font-size: 2rem;
     font-weight: 400;   
     color: $blue; 
+}
+
+section {
+    padding-top: 140px;
+
+    @media (max-width: 960px) {
+        padding-top: 113px;
+    }    
+}
+
+article {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    color: $black;
+}
+
+p {
+    text-indent: 2rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.img__descr {
+    color: #1f5bff;
+    font-size: 1.1rem;
 }
