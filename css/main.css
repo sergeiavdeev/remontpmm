@@ -208,6 +208,8 @@ p {
     left: -250px;
     top: 80px;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(220, 223, 226);
   }
 }
 .header__list.active {
@@ -400,12 +402,12 @@ img {
   font-size: 2rem;
 }
 
-.link__mail, .link__phone {
+.link__mail, .link__phone, .link__telegramm {
   color: #1f5bff;
   display: flex;
   align-items: center;
 }
-.link__mail::before, .link__phone::before {
+.link__mail::before, .link__phone::before, .link__telegramm::before {
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
@@ -421,6 +423,10 @@ img {
 
 .link__mail::before {
   background-image: url("../img/mail.svg");
+}
+
+.link__telegramm::before {
+  background-image: url("../img/telegramm.svg");
 }
 
 .footer {

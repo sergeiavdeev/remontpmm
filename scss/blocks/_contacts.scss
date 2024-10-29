@@ -20,7 +20,7 @@
     }
 }
 
-.link__mail, .link__phone {
+.link__mail, .link__phone, .link__telegramm {
     color: $blue;    
     display: flex;
     align-items: center;
@@ -46,5 +46,12 @@
     
     &::before {        
         background-image: url("../img/mail.svg");        
+    }
+}
+
+.link__telegramm {
+    
+    &::before {        
+        background-image: url("../img/telegramm.svg");        
     }
 }
