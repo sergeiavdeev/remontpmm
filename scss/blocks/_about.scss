@@ -20,9 +20,17 @@
         font-size: 1.2rem;
         font-weight: 700;
         position: relative;
+
+        @media (max-width: 400px) {
+            height: 230px;
+            width: 230px;
+        }
     }
 
     &__number {
+        display: flex;;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         top: 0;
         bottom: 0;
