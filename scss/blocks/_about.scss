@@ -1,0 +1,38 @@
+.how-to {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    &__step {
+        display: flex;
+        align-items: center;
+        border: 15px solid $blue;
+        //border-width: 15px 15px 15px 0;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        padding: 30px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: relative;
+    }
+
+    &__number {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: rgba(31, 91, 255, 0.2);
+        font-size: 12rem;
+    }
+}
+
+.more-ref {
+    font-size: 2rem;
+}
