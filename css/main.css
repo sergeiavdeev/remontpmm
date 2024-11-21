@@ -396,7 +396,9 @@ img {
 .contacts__content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
 }
 .contacts__content ul {
   display: flex;
@@ -407,6 +409,23 @@ img {
 }
 .contacts__content li {
   font-size: 2rem;
+}
+.contacts__content form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.contacts__content input, .contacts__content textarea {
+  border: 2px solid #1f5bff;
+  font-size: 1.6rem;
+  padding: 5px;
+}
+.contacts__content button {
+  border: 2px solid #1f5bff;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(31, 91, 255, 0.2);
 }
 
 .link__mail, .link__phone, .link__telegramm {
