@@ -7,5 +7,19 @@ document.querySelector('.burger').addEventListener('click', function() {
 
 document.querySelector('#callBackBtn').addEventListener('click', function(event) {
     event.preventDefault();
-    alert('Отправлено!'+ event);
+
+    var phone = document.getElementById('phone').value;
+    var name = document.getElementById('name').value;
+    var issue = document.getElementById('descr').value;
+
+    fetch("/bot/admin/send", {
+        method: 'PUT',
+        body: JSON.stringify({name: name, phone: phone, issue: issue})
+    }).then(response => {
+        if (response.status != 200) {
+            console.log('Что то пошло не так')
+        } else {
+            alert('Отправлено!');
+        }
+    })    
 });
