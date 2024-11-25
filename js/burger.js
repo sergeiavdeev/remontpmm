@@ -14,6 +14,9 @@ document.querySelector('#callBackBtn').addEventListener('click', function(event)
 
     fetch("/bot/admin/send", {
         method: 'PUT',
+        headers: {
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify({name: name, phone: phone, issue: issue})
     }).then(response => {
         if (response.status != 200) {
